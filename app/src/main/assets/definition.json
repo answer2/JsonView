@@ -1,0 +1,8 @@
+{
+
+    "menu":["main.json","test.json"],
+    "var": {
+        "test": "测试",
+        "test1": "测试1"
+    }
+}

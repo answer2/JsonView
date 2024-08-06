@@ -1,0 +1,97 @@
+{
+    "background": "#FF0000",
+    "round": 10,
+    "title": "我是title",
+    "subtitle": "我是子标题",
+    "backIcon": true,
+    "contentView": {
+        "width": "100%",
+        "height": "100%",
+        "type": "LinearLayout",
+        "gravity": "center",
+        "items": [
+            {
+                "width": "100%",
+                "height": "80%",
+                "type": "LinearLayout",
+                "background": [
+                    "null",
+                    "#C0CA33",
+                    "#D84315"
+                ],
+                "round": 30,
+                "gravity": "center",
+                "fun": "test",
+                "id": "test",
+                "reflect": {
+                    "className": "com.answer.library.JsonView.manager.VarManager",
+                    "type": "field",
+                    "name": "varList",
+                    "isUseHide": true,
+                    "isOnClick":true,
+                    "VarVlaue": "VarMap",
+                    "reflect": {
+                        "className": "java.util.HashMap",
+                        "type": "method",
+                        "instance": "{$VarMap}",
+                        "parameterTypes": [
+                            "java.lang.Object",
+                            "java.lang.Object"
+                        ],
+                        "isUseHide": true,
+                        "name": "put",
+                        "invokeArgs": [
+                            "TestReflect(String)",
+                            "测试反射成功(String)"
+                        ]
+                    }
+                },
+                "items": [
+                    {
+                        "type": "LinearLayout",
+                        "background": "#00FFAF",
+                        "height": "50%",
+                        "width": "40%",
+                        "ori": "1",
+                        "round": 30,
+                        "items": [
+                            {
+                                "type": "TextView",
+                                "text": "{$TestReflect}",
+                                "size": "20",
+                                "color": "#000000"
+                            },
+                            {
+                                "type": "Button",
+                                "text": "{$test}",
+                                "click":"toast('hhhhhhhhhhhhh')",
+                                "size": "20",
+                                "color": "#000000",
+                                "sound": "sounds/anvil_land.mp3"
+                            },
+                            {
+                                "type": "EditText",
+                                "hint": "我是EditText",
+                                "text": "{$test1}",
+                                "size": "15",
+                                "color": "#000000"
+                            },
+                            {
+                                "type": "ImageView",
+                                "image": "hud_settings.png",
+                                "height": "10w%",
+                                "width": "10w%"
+                            },
+                            {
+                                "type": "View",
+                                "viewClass": "com.online.power.View.ASwitch",
+                                "height": "10h%",
+                                "width": "20w%"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

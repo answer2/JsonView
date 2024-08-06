@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.mycompany.application8"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+	
+}
+
+dependencies {
+	implementation 'com.caoccao.javet:javet-android-v8:3.1.4' // Android V8 (arm, arm64, x86 and x86_64)
+	
+	
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+}
